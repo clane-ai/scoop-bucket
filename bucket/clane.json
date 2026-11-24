@@ -1,0 +1,23 @@
+{
+  "version": "0.1.58",
+  "description": "The Clane CLI - Clane AI in your terminal.",
+  "homepage": "https://clane.sh",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://clane.sh/cli/releases/0.1.58/clane-0.1.58-windows-x86_64.zip",
+      "hash": "e175339b0b9e4d595abf29863d4c3c3b428e0950111ac88788e5f5ff471f69cf"
+    }
+  },
+  "bin": "clane.exe",
+  "post_install": [
+    "# Scoop owns this install, so Clane reports updates instead of replacing itself.",
+    "$dir = Join-Path $env:ProgramData 'Clane'",
+    "New-Item -ItemType Directory -Path $dir -Force | Out-Null",
+    "Set-Content -Path (Join-Path $dir 'update-mode') -Value 'notify'"
+  ],
+  "checkver": {
+    "url": "https://clane.sh/cli/stable/manifest.json",
+    "jsonpath": "$.version"
+  }
+}
