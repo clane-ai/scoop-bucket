@@ -1,12 +1,12 @@
 {
-  "version": "0.1.58",
+  "version": "0.1.59",
   "description": "The Clane CLI - Clane AI in your terminal.",
   "homepage": "https://clane.sh",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://clane.sh/cli/releases/0.1.58/clane-0.1.58-windows-x86_64.zip",
-      "hash": "e175339b0b9e4d595abf29863d4c3c3b428e0950111ac88788e5f5ff471f69cf"
+      "url": "https://clane.sh/cli/releases/0.1.59/clane-0.1.59-windows-x86_64.zip",
+      "hash": "2979414a19029fbd5cc26129c7ecb4cb97f394b41e7bda286c44c0b6e616466e"
     }
   },
   "bin": "clane.exe",
